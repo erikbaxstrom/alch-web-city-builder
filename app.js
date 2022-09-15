@@ -14,10 +14,10 @@ const architectureSelect = document.getElementById('architecture-select');
 
 /* State */
 let city = {
-    name: 'Olympia',
-    climate: 'tropical',
-    architecture: 'surreal',
-    attractions: ['Capital Building', 'Capital Lake', 'Olympia Brewery'],
+    name: 'Olympia, WA',
+    climate: 'forest',
+    architecture: 'small-town',
+    attractions: [],
 };
 
 /* Events */
