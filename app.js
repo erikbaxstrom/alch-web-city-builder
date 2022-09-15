@@ -21,16 +21,20 @@ let city = {
 /* Events */
 
 cityNameInput.addEventListener('input', () => {
-    console.log(cityNameInput.value);
+    city.name = cityNameInput.value;
+    displayCity();
 });
 
 climateSelect.addEventListener('change', () => {
-    console.log(climateSelect.value);
+    city.climate = climateSelect.value;
+    displayCity();
 });
 
 architectureSelect.addEventListener('change', () => {
-    console.log(architectureSelect.value);
+    city.architecture = architectureSelect.value;
+    displayCity();
 });
+
 /* Display Functions */
 function displayCity() {
     cityName.textContent = city.name;
