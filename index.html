@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>City Builder</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>City Builder</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section>
+                <label>
+                    City Name
+                    <input type="text" id="name-input" value="Springfield" />
+                </label>
+                <label>
+                    Climate
+                    <select id="climate-select">
+                        <option value="" disabled selected>Select a Climate</option>
+                        <option value="desert">Desert</option>
+                        <option value="forest">Forest</option>
+                        <option value="savanna">Savanna</option>
+                        <option value="tropical">Tropical</option>
+                    </select>
+                </label>
+                <label>
+                    Architecture
+                    <select id="architecture-select">
+                        <option value="" disabled selected>Select an Architecture</option>
+                        <option value="glass-and-steel">Glass and Steel</option>
+                        <option value="small-town">Small Town</option>
+                        <option value="surreal">Surreal</option>
+                    </select>
+                </label>
+                <label>
+                    Attractions
+                    <input type="text" id="attractions-input" />
+                </label>
+            </section>
+            <section></section>
+        </main>
+    </body>
 </html>
