@@ -25,6 +25,7 @@ main {
 #display {
     display: grid;
     grid-template-rows: auto auto auto;
+    justify-items: center;
 }
 
 #city-photos {
