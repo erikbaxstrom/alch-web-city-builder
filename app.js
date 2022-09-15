@@ -43,5 +43,14 @@ function displayCity() {
     archPhoto.src = './assets/architecture/arch-' + city.architecture + '.jpg';
 }
 
+function displayAttraction() {
+    attractionsList.innerHTML = '';
+    for (let attraction of city.attractions) {
+        const li = document.createElement('li');
+        li.textContent = attraction;
+        attractionsList.append(li);
+    }
+}
 // (don't forget to call any display functions you want to run on page load!)
 displayCity();
+displayAttraction();
