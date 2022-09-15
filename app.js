@@ -5,6 +5,8 @@ const cityName = document.getElementById('city-name');
 const climatePhoto = document.getElementById('climate-photo');
 const archPhoto = document.getElementById('arch-photo');
 const attractionsList = document.getElementById('attractions-list');
+const attractionInput = document.getElementById('attractions-input');
+const attractionButton = document.getElementById('add-attraction-button');
 
 const cityNameInput = document.getElementById('name-input');
 const climateSelect = document.getElementById('climate-select');
@@ -33,6 +35,15 @@ climateSelect.addEventListener('change', () => {
 architectureSelect.addEventListener('change', () => {
     city.architecture = architectureSelect.value;
     displayCity();
+});
+
+attractionButton.addEventListener('click', () => {
+    const attraction = attractionInput.value;
+    if (attraction !== '') {
+        city.attractions.push(attraction);
+        displayAttraction();
+    }
+    attractionInput.value = '';
 });
 
 /* Display Functions */
