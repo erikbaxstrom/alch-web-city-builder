@@ -26,6 +26,6 @@ city = {
 
 ## Event Listeners
 
-City Name Input Field: input
-Climate and Architecture selects: change
-Attractions button: click
+-   City Name Input Field: input
+-   Climate and Architecture selects: change
+-   Attractions button: click
