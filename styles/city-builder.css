@@ -1,0 +1,21 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#user-inputs {
+    display: grid;
+}
+#display {
+    display: grid;
+    grid-template-rows: 1fr 2fr auto;
+}
+
+#city-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#city-photos img {
+    width: 200px;
+}
