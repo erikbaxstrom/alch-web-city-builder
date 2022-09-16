@@ -1,0 +1,42 @@
+main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#user-inputs {
+    display: grid;
+    align-content: center;
+    gap: 12px;
+    font-size: 0.9em;
+}
+
+#user-inputs label {
+    display: grid;
+    gap: 3px;
+}
+
+#attractions-inputs {
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+
+#display {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+#city-photos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto 200px;
+}
+
+#city-photos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
